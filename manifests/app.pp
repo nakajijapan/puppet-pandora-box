@@ -9,7 +9,7 @@ class app {
   include mysql
   class {
     'rbenv':
-      defaultversion => '2.0.0-p353'
+      defaultversion => '2.1.0'
   }
 
 }
