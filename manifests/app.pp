@@ -1,3 +1,7 @@
+import 'base.pp'
+import 'nginx.pp'
+import 'mysql.pp'
+
 class app {
 
   include base
