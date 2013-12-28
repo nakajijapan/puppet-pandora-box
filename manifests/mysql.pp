@@ -1,7 +1,9 @@
 class mysql {
 
   package {
-    'mysql-server':
+    ['mysql', 
+     'mysql-server', 
+     'mysql-devel']:
       ensure => installed,
   }
 
