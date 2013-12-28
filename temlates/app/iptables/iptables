@@ -1,0 +1,24 @@
+*filter
+:INPUT DROP [0:0]
+:FORWARD DROP [0:0]
+:OUTPUT ACCEPT [0:0]
+-A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+-A INPUT -p icmp -j ACCEPT
+-A INPUT -i lo -j ACCEPT
+
+# ssh
+-A INPUT -m state --state NEW -m tcp -p tcp --dport 22 -j ACCEPT
+
+# FTP Service
+-A INPUT -p tcp --dport 21   -j ACCEPT
+
+# smtp
+-A INPUT -p tcp --dport 25   -j ACCEPT
+
+# DNS Service
+-A INPUT -p tcp --dport 53   -j ACCEPT
+
+# Web Service
+-A INPUT -p tcp --dport 80   -j ACCEPT
+
+COMMIT
