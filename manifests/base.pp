@@ -41,7 +41,7 @@ class base {
       group    => root;
     '/var/www/app/':
       ensure   => directory,
-      mode     => 700,
+      mode     => 755,
       owner    => app,
       group    => app,
       require  => [User['app'], File['/var/www']];
