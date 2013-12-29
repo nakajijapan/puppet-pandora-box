@@ -9,6 +9,8 @@ class base {
       'zsh',
       'tree',
       'git',
+      'vim',
+      'ack',
       'openssl',
       'openssl-devel',
     ]:
