@@ -13,6 +13,8 @@ class base {
       'ack',
       'openssl',
       'openssl-devel',
+      'ImageMagick',
+      'ImageMagick-devel',
     ]:
     ensure => installed;
   }
