@@ -13,6 +13,7 @@ class base {
       'vim-enhanced',
       'vim-common',
       'ack',
+      'tig',
       'openssl',
       'openssl-devel',
       'ImageMagick',
